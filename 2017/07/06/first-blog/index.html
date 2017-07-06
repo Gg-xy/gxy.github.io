@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>github+hexo搭建个人网站 | 耿晓勇</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="前端，Hexo,前端开发，JavaScript" />
+  
+
+  <meta name="description" content="随着网络的不断发展，越来越多的人有了自己网站，不知你是否想要拥有一个属于自己的博客网站，如果有，我或许可以帮得到你，请跟随此文章快速搭建自己的博客网站，用文章来记录你的成长，搭建个人博客的方法有很多种，在这里，我使用的是github+hexo的方法进行搭建。 直接开始 注册Github并创建个人仓库进入Github官网并进行注册，然后点击New repository创建仓库，仓库名为 用户名.gi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github+hexo搭建个人网站">
+<meta property="og:url" content="http://yoursite.com/2017/07/06/first-blog/index.html">
+<meta property="og:site_name" content="耿晓勇">
+<meta property="og:description" content="随着网络的不断发展，越来越多的人有了自己网站，不知你是否想要拥有一个属于自己的博客网站，如果有，我或许可以帮得到你，请跟随此文章快速搭建自己的博客网站，用文章来记录你的成长，搭建个人博客的方法有很多种，在这里，我使用的是github+hexo的方法进行搭建。 直接开始 注册Github并创建个人仓库进入Github官网并进行注册，然后点击New repository创建仓库，仓库名为 用户名.gi">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cc6419192cc2a6a000000.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cca2e9192cc2a6a000001.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595ccd2e9192cc2a6a000002.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595ccdfa9192cc2a6a000004.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595ccfc79192cc2a6a000005.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd0979192cc2a6a000006.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd2ec9192cc2a6a000007.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd3889192cc2a6a000008.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd5c59192cc2a6a000009.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd73a9192cc2a6a00000a.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd80d9192cc2a6a00000b.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cd96f9192cc2a6a00000c.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cda549192cc2a6a00000d.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cdaab9192cc2a6a00000e.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cdf1f9192cc2a6a00000f.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595cdfa39192cc2a6a000010.png">
+<meta property="og:image" content="http://yoursite.com/2017/07/06/first-blog/595ce10e9192cc2a6a000011.png">
+<meta property="og:updated_time" content="2017-07-06T12:31:07.581Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="github+hexo搭建个人网站">
+<meta name="twitter:description" content="随着网络的不断发展，越来越多的人有了自己网站，不知你是否想要拥有一个属于自己的博客网站，如果有，我或许可以帮得到你，请跟随此文章快速搭建自己的博客网站，用文章来记录你的成长，搭建个人博客的方法有很多种，在这里，我使用的是github+hexo的方法进行搭建。 直接开始 注册Github并创建个人仓库进入Github官网并进行注册，然后点击New repository创建仓库，仓库名为 用户名.gi">
+<meta name="twitter:image" content="http://yoursite.com/2017/07/06/first-blog/595cc6419192cc2a6a000000.png">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-first-blog" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">github+hexo搭建个人网站</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.07.06</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>耿晓勇</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>随着网络的不断发展，越来越多的人有了自己网站，不知你是否想要拥有一个属于自己的博客网站，如果有，我或许可以帮得到你，请跟随此文章快速搭建自己的博客网站，用文章来记录你的成长，搭建个人博客的方法有很多种，在这里，我使用的是<strong>github+hexo</strong>的方法进行搭建。</p>
+<p><strong>直接开始</strong></p>
+<h1 id="注册Github并创建个人仓库"><a href="#注册Github并创建个人仓库" class="headerlink" title="注册Github并创建个人仓库"></a>注册Github并创建个人仓库</h1><p>进入<strong>Github</strong><a href="https://github.com" target="_blank" rel="external">官网</a>并进行注册，然后点击<strong>New repository</strong>创建仓库，仓库名为 <strong>用户名.github.io</strong></p>
+<p><img src="/2017/07/06/first-blog/595cc6419192cc2a6a000000.png" alt=""></p>
+<h1 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h1><p>Git是一款分布式版本控制系统，免费、开源，可以敏捷高效的进行版本管理。了解更多<strong>Git</strong>的知识，各位可以自行查找。<br>首先从<a href="https://git-scm.com" target="_blank" rel="external"><strong>官网</strong></a>下载<strong>Git</strong>。<br>下载安装完成之后，在命令行中输入<code>git --version</code>测试是否安装成功，如出现下图所述，则安装成功。</p>
+<p><img src="/2017/07/06/first-blog/595cca2e9192cc2a6a000001.png" alt="测试git是否安装"></p>
+<p>之后鼠标右击或通过菜单搜索打开<strong>Git Bash</strong>，配置用户名和邮箱信息。</p>
+<pre><code>gti config --global user.name &apos;用户名&apos;
+
+git config --global user.email &apos;邮箱&apos;
+</code></pre><p>生成<strong>ssh秘钥</strong>：</p>
+<pre><code>ssh-kengen -t rsa -C &apos;github注册邮箱&apos;
+</code></pre><p>连续几个回车，生成的<strong>.ssh</strong>文件夹在系统盘用户根目录下：</p>
+<p><img src="/2017/07/06/first-blog/595ccd2e9192cc2a6a000002.png" alt="ssh所在文件夹"></p>
+<p>在文件夹中找到<code>id_rsa.pub</code>，将内容复制</p>
+<p><img src="/2017/07/06/first-blog/595ccdfa9192cc2a6a000004.png" alt="秘钥"></p>
+<p>进入刚刚注册的Github中，<code>settings--&gt;SSH and GPG keys</code>中点击<strong>New SSH key</strong>，<strong>title</strong>可填可不填，将刚才复制的内容添加到<strong>Key</strong>中，之后点击<strong>Add SSH key</strong><br><img src="/2017/07/06/first-blog/595ccfc79192cc2a6a000005.png" alt="添加秘钥到github中"><br>回到<strong>Git Bash</strong>中输入：</p>
+<pre><code>ssh git@github.com
+</code></pre><p>检测Github公钥是否添加成功，如下则说明添加成功。</p>
+<p><img src="/2017/07/06/first-blog/595cd0979192cc2a6a000006.png" alt="检测ssh添加"><br>以上就是关于<strong>Git</strong>的安装</p>
+<h1 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a>Node.js安装</h1><p><strong>Node.js</strong>是运行在服务端的Javascript，<a href="https://nodejs.org/zh-cn/download" target="_blank" rel="external">官网</a>下载地址（推荐安装msi格式）。接下来所使用<strong>Hexo</strong>就是基于Node.js。<br>下载安装完成之后，在命令行中分别输入<code>node -v</code>检测<strong>Node.js</strong>是否安装成功</p>
+<p><img src="/2017/07/06/first-blog/595cd2ec9192cc2a6a000007.png" alt="node"></p>
+<p><strong>Node.js</strong>中包含了环境变量以及<strong>npm</strong>的，在命令行中分别输入<code>npm -v</code>检测<strong>npm</strong>是否安装成功</p>
+<p><img src="/2017/07/06/first-blog/595cd3889192cc2a6a000008.png" alt="npm"></p>
+<p>到这一步，<strong>Node.js</strong>就安装完成了。</p>
+<h1 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>在安装<strong>Hexo</strong>之前先在电脑中创建一个文件夹，命名可以是blog之类的，之后的<strong>Hexo</strong>框架和自己写的东西以及主题都会放在这个文件夹中，之后进入文件夹内，按住<strong>shift</strong>+鼠标右键，点击如下图：</p>
+<p><img src="/2017/07/06/first-blog/595cd5c59192cc2a6a000009.png" alt="命令行"></p>
+<p>输入命令安装<strong>hexo</strong>,由于国内网速原因，下载可能需要一定的时间，可以选择使用淘宝镜像进行下载。（之后的操作都在刚刚创建的文件夹目录下完成）</p>
+<pre><code>npm install -g hexo-cli
+</code></pre><p>完成之后，输入<code>hexo -v</code>检查</p>
+<p><img src="/2017/07/06/first-blog/595cd73a9192cc2a6a00000a.png" alt="hexo -v"></p>
+<p>安装相关工具：</p>
+<pre><code>npm install hexo --save
+</code></pre><p>初始化博客：</p>
+<pre><code>hexo init
+</code></pre><p>之后输入以下代码，出现下面图片中的内容之后，在浏览器输入<code>localhost:4000</code>，即可查看我们的网站雏形</p>
+<pre><code>hexo new test_my_site
+hexo g
+hexo s
+</code></pre><p><img src="/2017/07/06/first-blog/595cd80d9192cc2a6a00000b.png" alt="localhost"></p>
+<p>下面这张图片就是我们网站的雏形</p>
+<p><img src="/2017/07/06/first-blog/595cd96f9192cc2a6a00000c.png" alt="预览"></p>
+<p><strong>Ctrl</strong>+<strong>c</strong>即可退出预览。</p>
+<h1 id="网站推送"><a href="#网站推送" class="headerlink" title="网站推送"></a>网站推送</h1><p>上面只是完成了在本地预览，接下的就需要将它推送的Github上，再次之前，需要说明的是：在我们的博客文件夹中有<code>.config.yml</code>文件，一个在文件夹根目录下，称之为站点配置文件</p>
+<p><img src="/2017/07/06/first-blog/595cda549192cc2a6a00000d.png" alt="根目录下的"></p>
+<p>另一个在我们的主题文件夹<strong>themes</strong>内，称之为主题配置文件，后续修改主题内容都与它有关</p>
+<p><img src="/2017/07/06/first-blog/595cdaab9192cc2a6a00000e.png" alt="主题文件下"></p>
+<p>之后打开站点配置文件，翻页到最后将其修改如下：<br>deploy:<br>    type: git<br>    repo: Github上仓库的完整地址，结尾处记得加上 <strong>.git</strong><br>    branch: master<br>注意：这里相对会严禁一些，分号后面必须加空格。<br>上述完成之后安装Git部署插件：</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>初始化本地仓库：</p>
+<pre><code>git init
+</code></pre><p>连接到远程仓库：</p>
+<pre><code>git remote add origin Github上仓库的完整地址，结尾处记得加上 **.git**
+</code></pre><p>发布网站：</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
+</code></pre><p>到这里，我们的网站就初步完成了，在浏览器输入<strong>用户名.github.io</strong>,就可以看到我们的网站了。为了让我们的网站更方便记忆接下来就是要进行域名绑定了，这里我推荐使用阿里云来购买域名，注册登录购买之后，进到域名列表，可以看到自己购买的域名，之后点击<strong>解析</strong>。</p>
+<p><img src="/2017/07/06/first-blog/595cdf1f9192cc2a6a00000f.png" alt="域名"></p>
+<p>然后添加解析，如下：</p>
+<p><img src="/2017/07/06/first-blog/595cdfa39192cc2a6a000010.png" alt="解析"></p>
+<p>添加解析记录，两处A的记录值是Github的地址，CNAME处的记录值是你的<strong>用户名.github.io</strong>,然后进入<strong>Github</strong>中，进入之前创建的仓库，点击<strong>settings</strong>，设置<strong>Custom domain</strong>，将自己注册好的域名填入，<strong>save</strong></p>
+<p><img src="/2017/07/06/first-blog/595ce10e9192cc2a6a000011.png" alt="绑定域名"></p>
+<p>上述步骤完成之后，进入博客本地文件夹，在<strong>Blog/source</strong>目录下，新建记事本，将域名输入进去，保存为所有文件命名为CNAME，。之后执行以下步骤：</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
+</code></pre><p>到这里，我们的博客就搭建完了。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>我也是结合网上许多大神，但还是踩了很多坑，所以结合自己所使用的方法写了这篇文章。<br>我在尝试搭建博客的时候，应该是由于我电脑环境变量的问题，导致多次失败，所以我推荐在安装node的时候使用msi格式的。如果有和我遇到一样的问题的可以自行查找，这个网上方法有很多，我是直接重装了系统的。<br>在搭建完成之后，关于主题，可以到网上查找hexo的主题，每个主题都对应有盖主题的安装方法。</p>
+
+    
+  </div>
+</article>
+
+
+   
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="hide pull-left" href="/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
